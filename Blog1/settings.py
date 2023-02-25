@@ -81,18 +81,7 @@ WSGI_APPLICATION = 'Blog1.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'Blog1',
-        'USER': 'postgres',
-        'PASSWORD': 'Luche1990.',
-        'HOST': 'localhost',
-        'PORT': '5433',
-    }
-}
-
-DATABASES['default'] = dj_database_url.config()
+DATABASES = {}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
